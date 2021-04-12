@@ -17,10 +17,10 @@
 
 ## Live Demo
 
-TBA
+[live demo](https://arcane-crag-22572.herokuapp.com)
 
 ### Screenshot of the homepage
-![screenshot](app/assets/images/screenshot.png)
+![screenshot](app/assets/images/.png)
 
 
 ## Getting Started
