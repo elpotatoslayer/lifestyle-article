@@ -1,4 +1,3 @@
-# rubocop:disable Metrics/BlockLength
 require 'rails_helper'
 
 RSpec.describe Article, type: :model do
@@ -19,16 +18,6 @@ RSpec.describe Article, type: :model do
       expect(subject).to_not be_valid
     end
 
-    it 'is not valid with a title shorter than 2 characters' do
-      subject.title = 'K'
-      expect(subject).to_not be_valid
-    end
-
-    it 'is not valid with a title longer than 100 characters' do
-      subject.title = 'AnExtremelyWeirdEnoughLongtitle' * 4
-      expect(subject).to_not be_valid
-    end
-
     it 'is not valid without a text' do
       subject.text = nil
       expect(subject).to_not be_valid
@@ -41,4 +30,3 @@ RSpec.describe Article, type: :model do
     it { should have_and_belong_to_many(:categories) }
   end
 end
-# rubocop:enable Metrics/BlockLength
