@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user
+  skip_before_action :authenticate_user, only: %i[index new create]
 
   def index
     @category = Category.find(params[:cat])
