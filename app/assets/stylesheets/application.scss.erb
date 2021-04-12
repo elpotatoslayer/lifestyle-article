@@ -83,4 +83,50 @@ h3 {
   border-left: 0;
 }
 
+.main-container {
+  display: flex;
+  height: calc(100vh - 150.4px);
+  min-height: 300px;
+  background-image: url(<%= asset_path 'login_wallpaper.jpg' %>);
+  background-size: cover;
+  background-position: center;
+}
+
+.form {
+  width: 66%;
+  background-color: $white-ish;
+  padding: 3em;
+  margin: auto;
+}
+
+.form__title {
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
+}
+
+.form__group {
+  margin-top: 1em;
+}
+
+.form__group--submit {
+  margin-top: 3em;
+}
+
+.form__input-group {
+  height: auto;
+  min-height: 3em;
+  display: flex;
+  border: $lightgray solid 0.1px;
+}
+
+
+.form__input {
+  width: 100%;
+  border: 0;
+  padding: 0 1em;
+  &:focus {
+    outline: none;
+    box-shadow: $orange-flow 0 0 6px;
+  }
+}
 
