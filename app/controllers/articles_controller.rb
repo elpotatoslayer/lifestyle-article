@@ -30,6 +30,25 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def edit
+    set_article
+    @categories = Category.where.not(id: @article.categories)
+  end
+
+  def update
+    set_article
+    @categories = Category.where(id: article_category_params[:category_id])
+    if @article.update(article_params)
+      @categories.each { |cat| @article.categories << cat } unless @categories.empty?
+      redirect_to categories_path, notice: 'You successfully edited your article'
+    else
+      @article.valid?
+      flash.now.alert = "Sorry! #{@article.errors.full_messages.first}!"
+      @categories = Category.where.not(id: @article.categories)
+      render :edit
+    end
+  end
+
   private
 
   def authenticate_user
