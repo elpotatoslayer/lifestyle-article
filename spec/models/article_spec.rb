@@ -33,16 +33,6 @@ RSpec.describe Article, type: :model do
       subject.text = nil
       expect(subject).to_not be_valid
     end
-
-    it 'is not valid with a text shorter than 2 characters' do
-      subject.text = 'K'
-      expect(subject).to_not be_valid
-    end
-
-    it 'is not valid with a text longer than 1000 characters' do
-      subject.text = 'AnExtremelyWeirdEnoughLongtext' * 40
-      expect(subject).to_not be_valid
-    end
   end
 
   context 'Associations' do
