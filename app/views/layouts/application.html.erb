@@ -12,14 +12,14 @@
   <body class="body">
     <div>
       <nav class="navbar">
-        <%= link_to 'Tech Articles', root_path, class: 'navbar__brand' %>
+        <%= link_to 'Tech App', root_path, class: 'navbar__brand' %>
         <%= show_user_links %>
         <%= show_logged_in %>
       </nav>
 
       <%= yield %>
       <footer class="footer">
-          <%= link_to 'Tech Articles', root_path, class: 'footer__brand' %>
+          <%= link_to 'Tech App', root_path, class: 'footer__brand' %>
           <%= link_to 'Privacy Policy', '', class: 'footer__link footer__link--first' %>
           <%= link_to 'Terms & Conditions', '', class: 'footer__link' %>
           <span class="footer__link footer__link--inactive">&copy; Copyright 2020. All rights reserved.</span>
