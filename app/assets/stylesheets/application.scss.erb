@@ -188,7 +188,115 @@ h3 {
   }
 }
 
+.form__input--area {
+  height: 7em;
+  padding: 0.5em 1em;
+}
 
+.form__btn {
+  background-color: $orange;
+  border: 0;
+  color: $white-ish;
+  font-weight: 600;
+  padding: 0 1em;
+  &:focus {
+    outline: none;
+    box-shadow: $orange-flow 0 0 6px;
+  }
+}
+
+.form__label {
+  border: 0;
+  color: $black;
+  font-weight: 600;
+  padding: 0 0.5em;
+}
+
+.notice {
+  display: flex;
+  height: 3em;
+  color: $white;
+  font-weight: 600;
+  background-color: $neutral;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice--success {
+  background-color: $success;
+}
+
+.notice--alert {
+  background-color: $alert;
+}
+
+.footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: $brown-ish;
+  padding: 1.3em 1em 1.5em;
+}
+
+.footer__brand {
+  color: $white;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.6em;
+  font-weight: 500;
+  padding: 0 0.5em;
+  line-height: 1em;
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: $orange-flow 0 3px 2px -2px;
+  }
+}
+
+.footer__link {
+  color: $white-ish;
+  font-weight: 600;
+  line-height: 1.1em;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  border-left: $grey 2px solid;
+  &:hover {
+    color: $orange;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: $orange-flow 0 3px 2px -2px;
+    padding-bottom: 0.1em;
+  }
+}
+
+.footer__link--first {
+  margin-left: auto;
+  border-left: 0;
+}
+
+.footer__link--inactive {
+  cursor: default;
+  &:hover {
+    color: $white-ish;
+  }
+}
+
+.footer__icon {
+  color: $orange;
+  font-size: 2em;
+  padding: 0 0.15em;
+  line-height: 1.1em;
+  &:hover {
+    color: $white-ish;
+  }
+  &:focus {
+    outline: none;
+    color: $white-ish;
+    box-shadow: $orange-flow 0 3px 2px -2px;
+  }
+}
 
 .main,
 .categories {
@@ -251,3 +359,56 @@ h3 {
   font-weight: 900;
 }
 
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  &::before {
+    content: '';
+    display: block;
+    background-color: $brown-ish;
+    width: 100%;
+    height: 0.3em;
+  }
+}
+
+.article {
+  width: 50%;
+  display: flex;
+  min-height: 380px;
+}
+
+.article__image {
+  width: 50%;
+  min-height: 220px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(<%= asset_path 'no_image.svg.png' %>);
+}
+
+.article__card {
+  width: 50%;
+  background-color: $white-ish;
+  padding: 2em 2em 2.5em;
+  max-height: 380px;
+}
+
+.article__dislike {
+  margin: 0 0.6em;
+  font-size: 1.3em;
+  color: $orange;
+  transition: all ease-out 250ms;
+  &:hover {
+    color: $black;
+    text-shadow: 0 0 10px $black-ish;
+  }
+  &:focus {
+    outline: none;
+    color: $black-ish;
+    text-shadow: 0 0 10px $black-ish;
+  }
+}
+
+.article__body {
+  color: $black-ish;
+  font-size: 1em;
+}
