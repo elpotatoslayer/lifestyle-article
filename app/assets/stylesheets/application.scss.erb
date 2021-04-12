@@ -1,0 +1,86 @@
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Share+Tech&display=swap');
+@import 'font-awesome.css';
+
+$black: black;
+$black-ish: rgb(53, 53, 53);
+$white: white;
+$white-ish: whitesmoke;
+$orange-flow: lightsalmon;
+$orange-trans: rgba(255, 160, 122, 0.25);
+$orange-trans-shadow: rgba(255, 160, 122, 0.5);
+$orange: #FE6001;
+$alert: rgba(177, 38, 14, 0.85);
+$success: rgba(62, 129, 62, 0.85);
+$neutral: rgba(129, 129, 129, 0.85);
+$lightgray: lightgray;
+$grey: grey;
+$brown-ish: #4E443F;
+$yellow: yellow;
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: inherit;
+  } 
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
+.body {
+  background-image: $linear-hue,
+  url(<%= asset_path 'background.jpg' %>);
+}
+
+.navbar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: $white-ish;
+  padding: 1.3em 1em 1.5em;
+}
+
+.navbar__brand {
+  color: $black;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.6em;
+  font-weight: 900;
+  padding: 0 0.5em;
+  margin-right: 0.5em;
+  line-height: 1em;
+  &:hover {
+    color: $black;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: $orange-flow 0 3px 2px -2px;
+  }
+}
+
+.navbar__link {
+  color: $grey;
+  font-weight: 600;
+  line-height: 1.1em;
+  font-size: 0.8em;
+  padding: 0 0.5em;
+  border-left: $grey 2px solid;
+  &:hover {
+    color: $orange;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: $orange-flow 0 3px 2px -2px;
+    padding-bottom: 0.1em;
+  }
+}
+
+.navbar__link--first {
+  margin-left: auto;
+  border-left: 0;
+}
+
+
