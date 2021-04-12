@@ -18,6 +18,8 @@ $grey: grey;
 $brown-ish: #4E443F;
 $yellow: yellow;
 
+$linear-hue: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.25));
+
 a {
   text-decoration: none;
   &:hover {
@@ -136,6 +138,45 @@ h3 {
   border: $lightgray solid 0.1px;
 }
 
+.form__input-group--checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: $white;
+  input[type="checkbox"] {
+    margin: 1em;
+    width: calc(5% - 2em);
+    &:hover {
+      cursor: pointer;
+      outline: none;
+      box-shadow: 0 0 10px $orange-flow;
+    }
+    &:focus {
+      outline: none;
+      color: $orange;
+      box-shadow: 0 0 10px $orange-flow;
+    }
+  }
+  label {
+    width: 45%;
+    margin-bottom: 0;
+    &:hover {
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: $orange-trans;
+      box-shadow: 0 0 10px $orange-trans-shadow;
+    }
+  }
+}
+
+.form__input-group--submit {
+  height: auto;
+  min-height: 3em;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  border: $lightgray solid 0.1px;
+}
 
 .form__input {
   width: 100%;
@@ -171,5 +212,42 @@ h3 {
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.5em 1.5em 0.5em;
+}
+
+.featured__title {
+  color: $orange;
+  font-weight: 900;
+  font-size: 1.3em;
+  padding-left: 0.3em;
+  margin-bottom: 1em;
+}
+
+.category {
+  width: 25%;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.category__title {
+  color: $white;
+  display: inline-block;
+  padding: 0 0.18em 0.18em;
+  font-size: 1.1em;
+  font-weight: 900;
+  border-bottom: $yellow solid 2px;
+  &:focus {
+    outline: none;
+    border-bottom: $orange solid 2.5px;
+    padding: 0 0.18em 0.14em;
+  }
+}
+
+.category__body {
+  padding: 0 0.18em 0.18em;
+  font-size: 1.1em;
+  font-weight: 900;
 }
 
