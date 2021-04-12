@@ -392,6 +392,47 @@ h3 {
   max-height: 380px;
 }
 
+.article__title {
+  display: inline-block;
+  color: $black-ish;
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+.article__edit {
+  margin: 0 0.15em 0 0;
+  font-size: 1.3em;
+  color: rgb(38, 194, 38);
+  transition: all ease-out 250ms;
+  &:hover {
+    color: $orange;
+    text-shadow: 0 0 10px $orange-flow;
+  }
+  &:focus {
+    outline: none;
+    color: $orange;
+    text-shadow: 0 0 10px $orange-flow;
+  }
+}
+
+.article__like {
+  margin: 0 0.6em;
+  font-size: 1.3em;
+  color: $lightgray;
+  transition: all ease-out 250ms;
+  &:hover {
+    color: $orange;
+    text-shadow: 0 0 10px $orange-flow;
+  }
+  &:focus {
+    outline: none;
+    color: $orange;
+    text-shadow: 0 0 10px $orange-flow;
+  }
+}
+
 .article__dislike {
   margin: 0 0.6em;
   font-size: 1.3em;
