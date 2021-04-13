@@ -16,6 +16,12 @@
         <%= show_user_links %>
         <%= show_logged_in %>
       </nav>
+      <% if notice %>
+        <div class="notice notice--success"><%= notice %></div>
+      <% end %>
+      <% if alert %>
+        <div class="notice notice--alert"><%= alert %></div>
+      <% end %>
 
       <%= yield %>
       <footer class="footer">

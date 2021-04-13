@@ -1,6 +1,6 @@
 class Article < ApplicationRecord
-  validates :title, presence: true
-  validates :text, presence: true
+  validates :title, presence: true, length: { in: 2..50 }
+  validates :text, presence: true, length: { in: 2..2000 }
 
   scope :order_by_most_recent, -> { order(updated_at: :desc) }
 
