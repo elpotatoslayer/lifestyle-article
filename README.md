@@ -17,10 +17,10 @@
 
 ## Live Demo
 
-TBA
+[Live demo](https://arcane-crag-22572.herokuapp.com/categories)
 
 ### Screenshot of the homepage
-![screenshot](app/assets/images/screenshot.png)
+![screenshot](app/assets/images/screenshot.png)https://arcane-crag-22572.herokuapp.com/categories
 
 
 ## Getting Started
@@ -59,6 +59,6 @@ Thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for her awes
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Ralph-1/lifestyle-article/issues).
 
-Feel free to check the [issues page](issues/).
 
