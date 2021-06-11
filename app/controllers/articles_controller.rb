@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 
   def index
     @category = Category.find(params[:cat])
-    @articles = @category.articles.order_by_most_recent.includes(:author)
+    @articles = @category.articles.order_by_most_recent.includes(:author).limit(4)
     @category.priority += 1
     @category.save
   end

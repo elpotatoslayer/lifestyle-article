@@ -1,6 +1,6 @@
 # Tech App
 
-> Tech App is the most popular web app to write - read articles about the latest Netflix shows. Simply log in to your account and start exploring.  This project consists of a simple session system with login and sign-up functionalities. You'll be redirected to the homepage where all categories will be displayed together with the most recent article written in that category. You can click the category section to browse all articles inside a single category. I also implemented a voting system for the articles where the user can vote just once for each article.
+> Tech App is the most popular web app to write - read articles. Simply log in to your account and start exploring.  This project consists of a simple session system with login and sign-up functionalities. You'll be redirected to the homepage where all categories will be displayed together with the most recent article written in that category. You can click the category section to browse all articles inside a single category. I also implemented a voting system for the articles where the user can vote just once for each article.
 
 ## Features
 
@@ -17,10 +17,10 @@
 
 ## Live Demo
 
-TBA
+[Live demo](https://arcane-crag-22572.herokuapp.com/categories)
 
 ### Screenshot of the homepage
-![screenshot](app/assets/images/screenshot.png)
+![screenshot](app/assets/images/screenshot.png)https://arcane-crag-22572.herokuapp.com/categories
 
 
 ## Getting Started
@@ -59,6 +59,6 @@ Thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for her awes
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/Ralph-1/lifestyle-article/issues).
 
-Feel free to check the [issues page](issues/).
 
